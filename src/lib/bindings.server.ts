@@ -4,7 +4,7 @@
 // `cloudflare:workers` is the Workers-runtime module that exposes the Worker
 // env (bindings) — usable inside any server-side code (server functions,
 // server routes). It is NOT bundled; the runtime provides it.
-import { env } from "cloudflare:workers";
+import process from "node:process";
 // Import the binding types directly — NOT via the global tsconfig `types` list,
 // which would clobber the DOM globals the client/SSR React code relies on.
 import type {
@@ -27,5 +27,5 @@ type AppEnv = {
 };
 
 export function bindings(): AppEnv {
-  return env as unknown as AppEnv;
+  return { HF_ENV: process.env.HF_ENV, APP_SLUG: process.env.APP_SLUG } as AppEnv;
 }
