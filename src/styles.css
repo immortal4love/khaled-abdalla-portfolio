@@ -216,3 +216,18 @@ button { color:inherit; }
   .contact-phone .contact-detail { font-size:13px; }
   .social-links { gap:14px 20px; margin-top:24px; }
 }
+.contact-ornament {
+  pointer-events: none !important;
+}
+
+.contact-methods,
+.social-links {
+  position: relative;
+  z-index: 10;
+}
+
+.social-links a {
+  position: relative;
+  z-index: 11;
+  cursor: pointer;
+}
