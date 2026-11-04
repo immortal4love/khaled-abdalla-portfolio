@@ -185,3 +185,34 @@ button { color:inherit; }
 @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto}.scroll-cue svg{animation:none}.reveal{opacity:1;transform:none;transition:none} *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important} }
 .contact-link-pending { border:0; border-bottom:1px solid rgba(77,153,148,.5); background:transparent; color:var(--stone); cursor:not-allowed; opacity:.82; padding:0 0 10px; }
 .contact-link-pending span { opacity:.6; }
+.contact-phone { gap:12px; }
+.contact-phone>svg { color:var(--accent); flex:none; }
+.contact-phone .contact-detail {
+  width:auto;
+  height:auto;
+  display:inline;
+  background:transparent;
+  color:var(--stone);
+  border-radius:0;
+  font-size:14px;
+}
+.social-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px 24px;
+  margin-top:28px;
+}
+.social-links a {
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  color:rgba(240,237,228,.78);
+  font-size:12px;
+}
+.social-links a svg { color:var(--accent); }
+.social-links a:hover { color:var(--stone); }
+@media (max-width:760px) {
+  .contact-methods { gap:18px 22px; }
+  .contact-phone .contact-detail { font-size:13px; }
+  .social-links { gap:14px 20px; margin-top:24px; }
+}
