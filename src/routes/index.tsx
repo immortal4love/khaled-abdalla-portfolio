@@ -214,7 +214,7 @@ function Index() {
 
       <section className="contact-section section-pad" id="contact">
         <div className="contact-ornament"><img src="/images/gem-facade.jpg" loading="lazy" decoding="async" alt="" /></div>
-        <div <div className="contact-methods">
+        <div className="contact-methods">
   <a href="tel:+201501835003" className="contact-link" aria-label="Call Khaled Abdalla">
     <Phone size={18} />
     <span className="contact-detail">+20 150 183 5003</span>
