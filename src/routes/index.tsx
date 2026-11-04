@@ -1,9 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import {
-  ArrowDown, ArrowUpRight, Compass, Globe2, Menu, MoveUpRight, X,
-} from "lucide-react";
-
+import { ArrowDown, ArrowUpRight, Compass, Facebook, Globe2, Instagram, Linkedin, Mail, Menu, MessageCircle, MoveUpRight, Phone, X } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -217,7 +214,32 @@ function Index() {
 
       <section className="contact-section section-pad" id="contact">
         <div className="contact-ornament"><img src="/images/gem-facade.jpg" loading="lazy" decoding="async" alt="" /></div>
-        <div className="contact-content reveal"><p className="eyebrow">05 / {t.contactLabel}</p><h2>{t.contactTitle}</h2><p>{t.contactText}</p><div className="contact-methods"><a href="https://wa.me/201501835003" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label={`${t.contactCta} — WhatsApp`}>{t.contactCta}<span><MoveUpRight/></span></a><a href="mailto:immortal4love4@gmail.com" className="contact-link" aria-label={`${t.emailCta}: immortal4love4@gmail.com`}>{t.emailCta}<span><MoveUpRight/></span></a></div><small>{t.contactNote}</small></div>
+        <div <div className="contact-methods">
+  <a href="tel:+201501835003" className="contact-link" aria-label="Call Khaled Abdalla">
+    <Phone size={18} />
+    <span className="contact-detail">+20 150 183 5003</span>
+  </a>
+
+  <a href="https://wa.me/201501835003" target="_blank" rel="noopener noreferrer" className="contact-link" aria-label="WhatsApp">
+    WhatsApp <span><MessageCircle size={18} /></span>
+  </a>
+
+  <a href="mailto:immortal4love4@gmail.com" className="contact-link" aria-label="Email Khaled Abdalla">
+    <Mail size={17} /> Email <span><MoveUpRight /></span>
+  </a>
+</div>
+
+<div className="social-links" aria-label="Social media profiles">
+  <a href="https://www.linkedin.com/in/khaled-abdalla-667b86218" target="_blank" rel="noopener noreferrer">
+    <Linkedin size={19} /> LinkedIn
+  </a>
+  <a href="https://www.facebook.com/share/18TmHnc4zu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <Facebook size={19} /> Facebook
+  </a>
+  <a href="https://www.instagram.com/immortal4love?obrf=bnNhOTFldDJ3NWF3&utm_source=qr" target="_blank" rel="noopener noreferrer">
+    <Instagram size={19} /> Instagram
+  </a>
+</div>
         <div className="contact-coordinates">EGYPT · 2026</div>
       </section>
 
