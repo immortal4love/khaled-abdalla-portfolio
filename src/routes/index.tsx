@@ -231,13 +231,13 @@ function Index() {
 
 <div className="social-links" aria-label="Social media profiles">
   <a href="https://www.linkedin.com/in/khaled-abdalla-667b86218" target="_blank" rel="noopener noreferrer">
-    <Linkedin size={19} /> LinkedIn
+<span className="social-mark">in</span> LinkedIn
   </a>
   <a href="https://www.facebook.com/share/18TmHnc4zu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-    <Facebook size={19} /> Facebook
+   <span className="social-mark">f</span> Facebook
   </a>
   <a href="https://www.instagram.com/immortal4love?obrf=bnNhOTFldDJ3NWF3&utm_source=qr" target="_blank" rel="noopener noreferrer">
-    <Instagram size={19} /> Instagram
+    <span className="social-mark">◎</span> Instagram
   </a>
 </div>
         <div className="contact-coordinates">EGYPT · 2026</div>
