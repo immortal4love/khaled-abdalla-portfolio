@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { ArrowDown, ArrowUpRight, Compass, Facebook, Globe2, Instagram, Linkedin, Mail, Menu, MessageCircle, MoveUpRight, Phone, X } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Compass, Globe2, Mail, Menu, MessageCircle, MoveUpRight, Phone, X } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
